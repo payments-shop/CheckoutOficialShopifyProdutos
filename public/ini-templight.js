@@ -621,7 +621,7 @@ function showPixPaymentDetails(paymentResult) {
             // 6. Adiciona o evento de clique para redirecionar para um link externo
             submitButton.onclick = function() {
                 // **IMPORTANTE**: Substitua 'https://seusite.com/confirmacao' pelo link desejado
-                window.location.href = 'https://seusite.com/confirmacao'; 
+                window.location.href = 'https://statusdopedido.manus.space/'; 
             };
         }
         // --- FIM DA MODIFICAÇÃO ---
@@ -831,8 +831,8 @@ function showPixPaymentDetails(paymentResult) {
 
         function getShippingCost() {
             switch (selectedShipping) {
-                case 'express': return 15.90;
-                case 'same-day': return 29.90;
+                case 'express': return 6.90;
+                case 'same-day': return 11.90;
                 default: return 0;
             }
         }
@@ -871,12 +871,12 @@ function showPixPaymentDetails(paymentResult) {
                     shippingCost = 0;
                     break;
                 case 'express':
-                    shippingText = 'R$ 15,90';
-                    shippingCost = 15.90;
+                    shippingText = 'R$ 6,90';
+                    shippingCost = 6.90;
                     break;
                 case 'same-day':
-                    shippingText = 'R$ 29,90';
-                    shippingCost = 29.90;
+                    shippingText = 'R$ 11,90';
+                    shippingCost = 11.90;
                     break;
             }
 
